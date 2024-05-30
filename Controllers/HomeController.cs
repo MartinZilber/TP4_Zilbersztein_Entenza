@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using TP4_Zilbersztein_Entenza.Models;
+using TP04.Models;
 
-namespace TP4_Zilbersztein_Entenza.Controllers;
+namespace TP04.Controllers;
 
 public class HomeController : Controller
 {

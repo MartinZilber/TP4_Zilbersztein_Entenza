@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using TP04.Models;
+using TP4_Zilbersztein_Entenza.Models;
 
 namespace TP04.Controllers;
 
@@ -12,9 +12,23 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
+    public IActionResult Ejemplo()
+    {
+        //dejamos este viewbag cómo ejemplo, podría ir el texto directo en la vista
+        ViewBag.Titulo = "Listado de Destinos";
+        ViewBag.Destinos = ORTWorld.ListaDestinos;
+        return View();
+    }
 
     public IActionResult Index()
     {
+        ViewBag.PaquetesIndex = ORTWorld.Paquetes;
+        return View();
+    }
+
+    public IActionResult SelectPaquete()
+    {
+        
         return View();
     }
 

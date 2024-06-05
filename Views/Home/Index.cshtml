@@ -3,6 +3,12 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">TP04</h1>
+    <!--Agregar un Link a Crear Paquete que se dirija a la acción “SelectPaquete” del controller.-->
+    <a href='@Url.Action("SelectPaquete","Home")'>Seleccionar Paquete</a>
+    <!--Recorrer el diccionario que se encuentra en ViewBag mostrando la info del paquete de cada destino.-->
+    <!--@foreach(Paquete paquete in ViewBag.PaquetesIndex){
+        <p>@paquete</p>
+    }-->
+  
 </div>

@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewBag.Titulo</h1>
+    <p>Ejemplo de Listar Destinos</p>
+    @foreach(string destino in ViewBag.Destinos) {
+        <p>@destino</p>
+    }
+</div>

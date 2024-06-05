@@ -28,7 +28,10 @@ public class HomeController : Controller
 
     public IActionResult SelectPaquete()
     {
-        
+        ViewBag.ListaDestinosIndex = ORTWorld.ListaDestinos;
+        ViewBag.ListaAereosIndex = ORTWorld.ListaAereos;
+        ViewBag.ListaHotelesIndex = ORTWorld.ListaHoteles;
+        ViewBag.ListaExcursionesIndex = ORTWorld.ListaExcursiones;
         return View();
     }
 

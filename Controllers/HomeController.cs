@@ -36,6 +36,8 @@ public class HomeController : Controller
     }
     public IActionResult GuardarPaquete(int Destino, int Hotel, int Aereo, int Excursion)
     {
+        Paquete paquete = new Paquete(ORTWorld.ListaHoteles[Hotel-1], ORTWorld.ListaAereos[Hotel-1], ORTWorld.ListaExcursiones[Excursion-1]);
+        ORTWorld.Paquetes.Add(ORTWorld.ListaDestinos[Destino-1],paquete);
         return View();
     }
 

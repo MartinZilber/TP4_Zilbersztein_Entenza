@@ -7,22 +7,22 @@
     <h1 class="display-4">TP04</h1>
     <a href='@Url.Action("Index","Home")'>Volver a home</a>
     <p>Acá se puede guardar un paquete</p>
-    <div><p>Destinos:</p>
+    <div class="Lista"> <p>Destinos:</p>
     @foreach (string destino in ViewBag.ListaDestinosIndex)
     {
         <p>@destino</p>
     }</div>
-    <div><p>Hoteles:</p>
+    <div class="Lista"><p>Hoteles:</p>
     @foreach (string hotel in ViewBag.ListaHotelesIndex)
     {
         <p>@hotel</p>
     }</div>
-    <div><p>Aéreos:</p>
+    <div class="Lista"><p>Aéreos:</p>
     @foreach (string aereo in ViewBag.ListaAereosIndex)
     {
         <p>@aereo</p>
     }</div>
-    <div><p>Excursiones:</p>
+    <div class="Lista"><p>Excursiones:</p>
     @foreach (string excursion in ViewBag.ListaExcursionesIndex)
     {
         <p>@excursion</p>

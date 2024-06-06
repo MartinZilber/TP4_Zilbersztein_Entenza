@@ -19,21 +19,26 @@ html {
 
 main{
   background-color: rgb(222, 168, 222);
+  height:100%;
+  width:100%;
 }
 
 body {
   margin-bottom: 60px;
 }
 
-div{
+.Lista{
   float:left;
-  margin-left:0%;
+  margin-left:12%;
+  margin-bottom:20px;
+  margin-top:20px;
 }
 
 div p{
-  width:100%;
-  height:100%;
+  height: 100%;
+  margin-bottom:1px;  
 }
-section{
-  margin-left:60%;
+
+form{
+  clear:left;
 }

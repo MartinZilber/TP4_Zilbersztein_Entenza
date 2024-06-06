@@ -34,6 +34,11 @@ public class HomeController : Controller
         ViewBag.ListaExcursionesIndex = ORTWorld.ListaExcursiones;
         return View();
     }
+    public IActionResult GuardarPaquete(int Destino, int Hotel, int Aereo, int Excursion)
+    {
+        Paquete paquete = (ORTWorld.ListaHoteles[Hotel-1], ORTWorld.ListaAereos[Aereo-1], ORTWorld.ListaExcursiones[Excursion-1]);
+        return View();
+    }
 
     public IActionResult Privacy()
     {

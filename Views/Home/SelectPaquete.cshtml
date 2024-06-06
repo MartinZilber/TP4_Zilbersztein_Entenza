@@ -5,6 +5,37 @@
 <div class="text-center">
     <h1 class="display-4">TP04</h1>
     <a href='@Url.Action("Index","Home")'>Volver a home</a>
-    
-  
+    <p>Acá se puede guardar un paquete</p>
+    <p>Destinos:</p>
+    @foreach (string destino in ViewBag.ListaDestinosIndex)
+    {
+        <p>@destino</p>
+    }
+    <p>Hoteles:</p>
+    @foreach (string hotel in ViewBag.ListaHotelesIndex)
+    {
+        <p>@hotel</p>
+    }
+    <p>Aéreos:</p>
+    @foreach (string aereo in ViewBag.ListaAereosIndex)
+    {
+        <p>@aereo</p>
+    }
+    <p>Excursiones:</p>
+    @foreach (string excursion in ViewBag.ListaExcursionesIndex)
+    {
+        <p>@excursion</p>
+    }
+    <form action='@Url.Action("GuardarPaquete", "Home")'>
+    <p>Ingrese el destino al cual viajará</p>
+    <input type="number" name="Destino" placeholder="Ingrese el destino"><br>
+    <p>Ingrese el hotel que elegirá</p>
+    <input type="number" name="Hotel" placeholder="Ingrese el hotel"><br>
+    <p>Ingrese el aéreo en el cual viajará</p>
+    <input type="number" name="Aereo" placeholder="Ingrese el aéreo en el cual viajará"><br>
+    <p>Ingrese la excursión que elegirá</p>
+    <input type="number" name="Excursion" placeholder="Ingrese la excursion"><br>
+    <input type="submit" name="Enviar" placeholder="Presione aquí para enviar"><br>
+    <input type ="reset" name ="Resetear" placeholder="Presione aquí para borrar los datos">
+    </form>
 </div>

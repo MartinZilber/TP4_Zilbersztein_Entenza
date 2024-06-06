@@ -17,6 +17,23 @@ html {
   min-height: 100%;
 }
 
+main{
+  background-color: rgb(222, 168, 222);
+}
+
 body {
   margin-bottom: 60px;
+}
+
+div{
+  float:left;
+  margin-left:0%;
+}
+
+div p{
+  width:100%;
+  height:100%;
+}
+section{
+  margin-left:60%;
 }

@@ -6,25 +6,26 @@
     <section>
     <h1 class="display-4">TP04</h1>
     <a href='@Url.Action("Index","Home")'>Volver a home</a>
-    <p>Acá se puede guardar un paquete</p>
+    <h2>Acá se puede guardar un paquete</h2>
     <div class="Lista"> 
-    <p>Destinos:</p>
+    <h3>Destinos:</h3>
     @foreach (string destino in ViewBag.ListaDestinosIndex)
     {
         <p>@destino</p>
     }</div>
     <div class="Lista">
-    <p>Hoteles:</p>
+    <h3>Hoteles:</h3>
     @foreach (string hotel in ViewBag.ListaHotelesIndex)
     {
         <p>@hotel</p>
     }</div>
-    <div class="Lista"><p>Aéreos:</p>
+    <div class="Lista">
+    <h3>Aéreos:</h3>
     @foreach (string aereo in ViewBag.ListaAereosIndex)
     {
         <p>@aereo</p>
     }</div>
-    <div class="Lista"><p>Excursiones:</p>
+    <div class="Lista"><h3>Excursiones:</h3>
     @foreach (string excursion in ViewBag.ListaExcursionesIndex)
     {
         <p>@excursion</p>

@@ -18,13 +18,18 @@ html {
 }
 
 main{
-  background-color: rgb(222, 168, 222);
   height:100%;
   width:100%;
 }
 
 body {
+  background-color: #76B75B;
   margin-bottom: 60px;
+}
+
+h1, h2, h3{
+  background-color: #4E9231;
+  font-style: italic;
 }
 
 .Lista{
@@ -39,6 +44,6 @@ div p{
   margin-bottom:1px;  
 }
 
-form{
-  clear:left;
+.Lista p {
+  color: #FFFF95;
 }

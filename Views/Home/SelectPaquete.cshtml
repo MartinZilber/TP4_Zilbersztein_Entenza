@@ -32,13 +32,13 @@
     }</div>
     <form action='@Url.Action("GuardarPaquete", "Home")'>
     <p>Ingrese el destino al cual viajará</p>
-    <input type="number" name="Destino" placeholder="Ingrese el destino"><br>
+    <input type="number" name="Destino" placeholder="Ingrese el destino" required><br><!--Indica que siempre se necesita un dato-->
     <p>Ingrese el hotel que elegirá</p>
-    <input type="number" name="Hotel" placeholder="Ingrese el hotel"><br>
+    <input type="number" name="Hotel" placeholder="Ingrese el hotel" required><br>
     <p>Ingrese el aéreo en el cual viajará</p>
-    <input type="number" name="Aereo" placeholder="Ingrese el aéreo en el cual viajará"><br>
+    <input type="number" name="Aereo" placeholder="Ingrese el aéreo en el cual viajará" required><br>
     <p>Ingrese la excursión que elegirá</p>
-    <input type="number" name="Excursion" placeholder="Ingrese la excursion"><br>
+    <input type="number" name="Excursion" placeholder="Ingrese la excursion" required><br>
     <input type="submit" name="Enviar" placeholder="Presione aquí para enviar"><br>
     <input type ="reset" name ="Resetear" placeholder="Presione aquí para borrar los datos">
     </form>

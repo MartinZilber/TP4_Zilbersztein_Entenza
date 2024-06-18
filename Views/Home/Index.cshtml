@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    int contador = 1;
 }
 
 <div class="text-center">
@@ -7,12 +8,14 @@
     <!--Agregar un Link a Crear Paquete que se dirija a la acción “SelectPaquete” del controller.-->
     <a href='@Url.Action("SelectPaquete","Home")'>Seleccionar Paquete</a>
     <!--Recorrer el diccionario que se encuentra en ViewBag mostrando la info del paquete de cada destino.-->
-   @* @foreach (Paquete p in ViewBag.PaquetesIndex.Values){
-    if (ViewBag.PaquetesIndex.Count == 0)
+    @foreach (Paquete p in ViewBag.PaquetesIndex.Values){
+    if (ViewBag.PaquetesIndex.Count != 0)
     {
+        <p>Paquete @contador</p>
         <p>@p.Hotel</p>
         <p>@p.Aereo</p>
         <p>@p.Excursion</p>
+        contador++;
     }
-   } *@
+   }
 </div>

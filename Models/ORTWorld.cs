@@ -13,5 +13,4 @@ static class ORTWorld
         if (posicion != -1) seEncontro = true;
         return seEncontro;
     }
-    
 }

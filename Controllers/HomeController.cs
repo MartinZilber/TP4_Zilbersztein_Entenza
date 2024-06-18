@@ -36,8 +36,16 @@ public class HomeController : Controller
     }
     public IActionResult GuardarPaquete(int Destino, int Hotel, int Aereo, int Excursion)
     {
+        
         Paquete paquete = new Paquete(ORTWorld.ListaHoteles[Hotel-1], ORTWorld.ListaAereos[Hotel-1], ORTWorld.ListaExcursiones[Excursion-1]);
-        ORTWorld.Paquetes.Add(ORTWorld.ListaDestinos[Destino-1],paquete);
+        bool estaEnPaquete = ORTWorld.IngresarPaquete(ORTWorld.ListaDestinos[Destino-1], paquete);
+        if (!estaEnPaquete)
+        {
+            ORTWorld.Paquetes.Add(ORTWorld.ListaDestinos[Destino-1],paquete);
+            ViewBag.Respuesta = "Se añadió exitosamente";
+        }
+        else
+        ViewBag.Respuesta = "No se ha podido añadir el paquete: el destino ya existe";
         return View();
     }
 

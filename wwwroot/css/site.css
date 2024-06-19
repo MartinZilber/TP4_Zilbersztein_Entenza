@@ -41,7 +41,8 @@ h1, h2, h3{
 
 div p{
   height: 100%;
-  margin-bottom:1px;  
+  margin-bottom:1px;
+  clear:left;  
 }
 
 .Lista p {

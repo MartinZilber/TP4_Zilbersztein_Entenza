@@ -10,11 +10,12 @@ static class ORTWorld
     {
         bool seEncontro = false;
         if (Paquetes.ContainsKey(destinoSeleccionado))
-            return true;
+            seEncontro = true;
         else
         {
             Paquetes.Add(destinoSeleccionado, paquete);
-            return false;
+            seEncontro = false;
         }
+        return seEncontro;
     }
 }
